@@ -1,0 +1,48 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenroot Agrostore Interactive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Greenroot Agrostore</h1>
+    <button id="offerBtn">Show Special Offer</button>
+  </header>
+
+  <section class="product-grid">
+    <div class="product-card" id="tomatoCard">
+      <h2>Fresh Tomatoes</h2>
+      <p>Organic and juicy</p>
+      <button onclick="animateCard('tomatoCard')">Animate</button>
+    </div>
+
+    <div class="product-card" id="pepperCard">
+      <h2>Red Pepper</h2>
+      <p>Hot and spicy</p>
+      <button onclick="animateCard('pepperCard')">Animate</button>
+    </div>
+  </section>
+
+  <section class="calculator">
+    <h2>Total Price Calculator</h2>
+    <input type="number" id="quantity" placeholder="Enter quantity">
+    <button id="calcBtn">Calculate Price</button>
+    <p id="priceResult"></p>
+  </section>
+
+  <div id="offerModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2>Special Discount!</h2>
+      <p>Get 20% off on bulk orders today only!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
